@@ -2,13 +2,13 @@
 
 ## REPORT 
 
-### This File contains the all the steps and routines used to reach the goals od this first Term.
+### This File contains the all the steps and routines used to reach the goals of this first Term.
 
 ---
 
 **Finding Lane Lines on the Road**
 
-The mains golas  are the following:
+The mains goals  are the following:
 * Make a pipeline that finds lane lines on the road
 * Reflect on your work in a written report
 
