@@ -26,7 +26,7 @@ The mains goals  are the following:
 
 ### 1. The Pipeline and how was coded Draw_Lines() function
 
-The pipeline consist in two separated functions ( trace_lanes() and trace_lanes_video() ). Both functions are based in Helper functions, but with different input arguments due fl_image pass as argument an colour image. 
+The pipeline consist in two separated functions ( trace_lanes() and trace_lanes_video() ). Both functions are based in Helper functions, but with different input arguments due fl_image pass as argument a colour image. 
 The main pipeline for both functions consist in these basic steps.
 
 1.Grayscale the image.
