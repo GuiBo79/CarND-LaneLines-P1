@@ -43,7 +43,9 @@ The main pipeline for both functions consist in these basic steps.
 Since the beginning I was searching for a draw_lines() function to plot solid lines, even in the test images.
 For the new draws_lines() function , the basic steps are.
 1.Classification of the incoming data in righ ou left lane, considering the line slope (y2-y1)/(x2-x1) , and the x value ( > or < of a calculated threshold in function of image size)
+
 2.To be more accurate and to mitigate noise, is used the PolyFit function to find the coefficients of the line given two image coordinates. 
+
 3.Plotting the lines using the Y´s as the bottom limit of the image and how long we want the lines, and the X´s calculated as function of Y and the PolyFit returned coefficients. 
 
 
@@ -53,10 +55,14 @@ For the new draws_lines() function , the basic steps are.
 
 ### 2. The Resolution Issue.
 
-One of the first shortcoming is the fact of the pipeline as is coded just will work for 960X540 movies. Due this “limitation” , the file “challenge.mp4” doesn´t work (1280X720). To make the code more robust is recommended to create the Masks , Polygon of Interest and and Y´s levels for line plotting in function of movie resolution. In practice, this situation could occur when we change the camera of a self driving car. 
+The main shortcoming is the fact of the pipeline as is coded just will work for 960X540 movies. Due this “limitation” , the file “challenge.mp4” doesn´t work (1280X720). To make the code more robust is recommended to create the Masks , Polygon of Interest and and Y´s levels for line plotting in function of movie resolution. In practice, this situation could occur when we change the camera of a self driving car. 
 
-##Footage taken from a 960X540 movie
+## Footage taken from a 960X540 movie
 ![alt text][image2]
+
+## Footage taken from a 1024X720 movie
+![alt text][image3]
+
 
 
 
