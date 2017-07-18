@@ -16,6 +16,8 @@ The mains goals  are the following:
 [//]: # (Image References)
 
 [image1]: ./examples/solidWhiteCurve.jpg_traced.jpg
+[image2]: ./examples/960by540.jpg
+[image2]: ./examples/1024by720.jpg
 
 ---
 
@@ -27,10 +29,15 @@ The pipeline consist in two separated functions ( trace_lanes() and trace_lanes_
 The main pipeline for both functions consist in these basic steps.
 
 1.Grayscale the image.
+
 2.Pass through a Gaussian filter.
+
 3.Apply the Canny Function.
+
 4.Create a Mask and a Polygon of  Interest.
+
 5.Appy the Hough Function.
+
 6.Create a weighted image between the main image and the Hough lines.
 
 Since the beginning I was searching for a draw_lines() function to plot solid lines, even in the test images.
@@ -44,12 +51,13 @@ For the new draws_lines() function , the basic steps are.
 ![alt text][image1]
 
 
-### 2. Identify potential shortcomings with your current pipeline
+### 2. The Resolution Issue.
 
+One of the first shortcoming is the fact of the pipeline as is coded just will work for 960X540 movies. Due this “limitation” , the file “challenge.mp4” doesn´t work (1280X720). To make the code more robust is recommended to create the Masks , Polygon of Interest and and Y´s levels for line plotting in function of movie resolution. In practice, this situation could occur when we change the camera of a self driving car. 
 
-One potential shortcoming would be what would happen when ... 
+##Footage taken from a 960X540 movie
+![alt text][image2]
 
-Another shortcoming could be ...
 
 
 ### 3. Suggest possible improvements to your pipeline
