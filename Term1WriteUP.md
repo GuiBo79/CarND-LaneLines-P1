@@ -17,7 +17,7 @@ The mains goals  are the following:
 
 [image1]: ./examples/solidWhiteCurve.jpg_traced.jpg
 [image2]: ./examples/960by540.jpg
-[image2]: ./examples/1280by720.jpg
+[image3]: ./examples/1280by720.jpg
 
 ---
 
