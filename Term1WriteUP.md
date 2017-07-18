@@ -9,8 +9,9 @@
 **Finding Lane Lines on the Road**
 
 The mains goals  are the following:
-* Make a pipeline that finds lane lines on the road
-* Reflect on your work in a written report
+
+* Make a pipeline that finds lane lines on the road in image and movies.
+* Reflect about the challenges and issues that´s envolves in a real situation of computer vision and image treatment. 
 
 
 [//]: # (Image References)
@@ -42,13 +43,14 @@ The main pipeline for both functions consist in these basic steps.
 
 Since the beginning I was searching for a draw_lines() function to plot solid lines, even in the test images.
 For the new draws_lines() function , the basic steps are.
+
 1.Classification of the incoming data in righ ou left lane, considering the line slope (y2-y1)/(x2-x1) , and the x value ( > or < of a calculated threshold in function of image size)
 
 2.To be more accurate and to mitigate noise, is used the PolyFit function to find the coefficients of the line given two image coordinates. 
 
 3.Plotting the lines using the Y´s as the bottom limit of the image and how long we want the lines, and the X´s calculated as function of Y and the PolyFit returned coefficients. 
 
-
+                                           Image plotted with solid lines
 
 ![alt text][image1]
 
@@ -66,8 +68,6 @@ The main shortcoming is the fact of the pipeline as is coded just will work for 
 
 
 
-### 3. Suggest possible improvements to your pipeline
+### 3. Improvements to the code
 
-A possible improvement would be to ...
-
-Another potential improvement could be to ...
+To not take the risk of lose my term submission deadline the improvements described above for the Optional Challenge are already in progress and as soon as possible the code, as well this assignment will be updated , with images and comments about the changes. 
