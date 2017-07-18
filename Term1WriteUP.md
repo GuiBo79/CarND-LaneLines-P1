@@ -17,7 +17,7 @@ The mains goals  are the following:
 
 [image1]: ./examples/solidWhiteCurve.jpg_traced.jpg
 [image2]: ./examples/960by540.jpg
-[image2]: ./examples/1024by720.jpg
+[image2]: ./examples/1280by720.jpg
 
 ---
 
@@ -57,10 +57,10 @@ For the new draws_lines() function , the basic steps are.
 
 The main shortcoming is the fact of the pipeline as is coded just will work for 960X540 movies. Due this “limitation” , the file “challenge.mp4” doesn´t work (1280X720). To make the code more robust is recommended to create the Masks , Polygon of Interest and and Y´s levels for line plotting in function of movie resolution. In practice, this situation could occur when we change the camera of a self driving car. 
 
-## Footage taken from a 960X540 movie
+                                           Footage taken from a 960X540 movie
 ![alt text][image2]
 
-## Footage taken from a 1024X720 movie
+                                           Footage taken from a 1024X720 movie
 ![alt text][image3]
 
 
